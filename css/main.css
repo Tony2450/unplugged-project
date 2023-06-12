@@ -107,8 +107,16 @@ body {}
 /* Header styles */
 
 header {
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+header a {
+  width: 60%;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 #separator {
@@ -116,10 +124,13 @@ header {
 }
 
 header nav {
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   flex-flow: row nowrap;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 header nav ul {
@@ -149,6 +160,9 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 aside.form {
@@ -156,16 +170,38 @@ aside.form {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
-aside div.content-wrapper{
+aside div.content-wrapper {
   display: flex;
   justify-content: left;
   flex-flow: row wrap;
 }
 
-aside h3{
+aside h3 {
   width: 100%;
+  padding: 0;
+  margin: 20px 0px;
+}
+
+aside p {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+#email-entry {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 1em;
+}
+
+#download-itinerary {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0px;
 }
 
 section.features {
@@ -173,22 +209,111 @@ section.features {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+article{
+  width: 60%;
+}
+
+article.features-items {
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+article.features-item-description {
+  padding: 0;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 section.reviews {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+section.reviews div.content-wrapper{
+  display: flex;
+  justify-content: left;
+}
+
+section.reviews h2 {
+  padding: 0;
+  margin-bottom: 40px;
+  margin-top: 0;
+  width: 100%;
+}
+
+section.reviews h3 {
+  padding: 0;
+  margin: 20px 0;
+  width: 50%;
 }
 
 /* Footer styles */
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+footer.content-wrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div.footer-content {
+  margin: 50px 0;
+  padding: 0;
+  width: 100%;
+}
+
+footer p{
+  margin: 0;
+}
+
+.contact{
+  margin-bottom: 50px;
+}
+
+.contact h4{
+  padding: 0;
+  margin: 20px 0px;
+}
+
+.social h4{
+  padding: 0;
+  margin: 20px 0px;
+}
+
+footer div.copyright{
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+/* FAQ styles */
+
+section.faq{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 /* ==========================================================================
