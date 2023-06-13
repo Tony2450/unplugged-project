@@ -337,16 +337,21 @@ section.mission{
   justify-content: center;
 }
 
+section.map{
+  width: 100%;
+}
+
 section.contact-section{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
 }
 
 section.contact-section div.content-wrapper{
   display: flex;
   flex-flow: column nowrap;
-  justify-content: left;
+  justify-content: center;
 }
 
 /* ==========================================================================
