@@ -101,6 +101,7 @@ body {
 
 ul,
 ol {
+  list-style-type: none;
   font-size: 1.125em;
   font-weight: bold;
 }
@@ -114,6 +115,7 @@ h1 {
   font-size: 2.25em;
   line-height: 2.6875rem;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -257,6 +259,32 @@ aside.form {
   margin: 0;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 aside div.content-wrapper {
   display: flex;
   justify-content: left;
@@ -316,10 +344,11 @@ article.features-items {
   width: 100%;
 }
 
-article.features-item-description {
+.features-item-description {
   padding: 0;
   margin-bottom: 30px;
   width: 100%;
+  text-align: center;
 }
 
 section.reviews {
@@ -346,7 +375,7 @@ section.reviews h2 {
 section.reviews h3 {
   padding: 0;
   margin: 20px 0;
-  width: 50%;
+  width: 100%;
 }
 
 /* Footer styles */
@@ -543,7 +572,7 @@ section.contact-section div.desktop-grouper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   /* Tablet styles here */
 
   h1 {
@@ -699,6 +728,7 @@ section.contact-section div.desktop-grouper {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 100px 0;
   }
 
   footer div.contact {
