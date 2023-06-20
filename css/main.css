@@ -144,9 +144,9 @@ p {
   line-height: 1.125rem;
 }
 
-img {}
-
-figure {}
+img {
+  width: 100%;
+}
 
 input {
   font-size: 1.125em;
@@ -243,6 +243,8 @@ main {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0;
+  height: 500px;
+  background: url(../img/unplugged-retreat.jpg) center/cover no-repeat #333;
 }
 
 #hero-area h1 {
@@ -262,7 +264,7 @@ aside.form {
 aside .form {
   margin-top: 30px;
 }
- 
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -270,7 +272,7 @@ input[type=text] {
   font-style: italic;
   padding: 1em;
 }
- 
+
 input[type=button] {
   width: 100%;
   padding: 20px 0;
@@ -331,6 +333,7 @@ section.features {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
 }
 
 article {
@@ -360,16 +363,22 @@ section.reviews {
   margin: 0;
 }
 
+figure{
+  margin: 0;
+}
+
 section.reviews div.content-wrapper {
   display: flex;
   justify-content: left;
+  flex-direction: column-reverse;
 }
 
 section.reviews h2 {
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   margin-top: 0;
   width: 100%;
+  order: 1;
 }
 
 section.reviews h3 {
@@ -457,6 +466,7 @@ section.mission {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 50px 0;
 }
 
 section.map {
@@ -468,6 +478,7 @@ section.contact-section {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
+  padding: 50px 0;
 }
 
 section.contact-section div.content-wrapper {
@@ -640,10 +651,6 @@ section.contact-section div.desktop-grouper {
     margin: 0;
   }
 
-  section#hero-area div.content-wrapper {
-    height: 150px;
-  }
-
   #hero-area {
     padding: 100px 0;
   }
@@ -707,8 +714,34 @@ section.contact-section div.desktop-grouper {
     padding: 100px 0;
   }
 
+  section.reviews h2 {
+    padding: 0;
+    margin-bottom: 40px;
+    margin-top: 0;
+    width: 85%;
+    order: unset;
+}
+
+  section.reviews h3 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  section.reviews div.content-wrapper {
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+  }
+
   section.reviews div.desktop-grouper {
-    width: 45%;
+    width: 50%;
+    margin-left: 2%;
+  }
+
+  figure {
+    margin:0;
+    width: 48%;
   }
 
   footer {
@@ -779,6 +812,7 @@ section.contact-section div.desktop-grouper {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding: 100px 0;
   }
 
   section.mission div.content-wrapper {
@@ -820,6 +854,7 @@ section.contact-section div.desktop-grouper {
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
+    padding: 100px 0;
   }
 
   section.contact-section div.content-wrapper {
@@ -843,7 +878,8 @@ section.contact-section div.desktop-grouper {
   }
 
   .faq h2,
-  .mission h2 {
+  .mission h2,
+  .contact-section h2 {
     font-size: 3em;
   }
 
@@ -894,10 +930,6 @@ section.contact-section div.desktop-grouper {
     margin: 0;
   }
 
-  section#hero-area div.content-wrapper {
-    height: 160px;
-  }
-
   aside div.desktop-grouper {
     width: 30%;
     overflow: auto;
@@ -945,9 +977,32 @@ section.contact-section div.desktop-grouper {
     text-align: center;
   }
 
-  section.reviews div.desktop-grouper {
-    width: 45%;
+  section.reviews h3 {
+    padding:0;
+    margin: 0;
+    width: 100%;
   }
+
+  section.reviews h2 {
+    order: unset;
+  }
+
+  section.reviews div.content-wrapper {
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+}
+
+  section.reviews div.desktop-grouper {
+    width: 40%;
+    margin-left: 8%;
+}
+
+  figure {
+    width: 48%;
+    margin: 0;
+    /* margin-left: 40px; */
+}
 
   footer {
     width: 100%;
@@ -1016,6 +1071,7 @@ section.contact-section div.desktop-grouper {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding: 100px 0;
   }
 
   section.mission div.content-wrapper {
@@ -1057,6 +1113,7 @@ section.contact-section div.desktop-grouper {
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
+    padding: 120px 0;
   }
 
   section.contact-section div.content-wrapper {
