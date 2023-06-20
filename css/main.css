@@ -476,7 +476,7 @@ section.map {
 .map figure {
   width: 100%;
   height: 0; 
-  padding-bottom: 75%; 
+  padding-bottom: 125%; 
   overflow: hidden;
   position: relative;
 }
@@ -853,6 +853,14 @@ section.contact-section div.desktop-grouper {
     width: 100%;
   }
 
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+    position: relative;
+}
+
   section.contact-section h2 {
     width: 100%;
   }
@@ -1111,6 +1119,14 @@ section.contact-section div.desktop-grouper {
   section.map {
     width: 100%;
   }
+
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    overflow: hidden;
+    position: relative;
+}
 
   section.contact-section h2 {
     width: 100%;
