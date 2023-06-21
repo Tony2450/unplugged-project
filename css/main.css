@@ -342,7 +342,7 @@ section.features {
   background: url('../img/unplugged-retreat-features.jpg') center/cover no-repeat #333;
 }
 
-section.features h2{
+section.features h2 {
   margin-bottom: 60px;
 }
 
@@ -437,25 +437,18 @@ footer p {
   margin-bottom: 50px;
 }
 
-.contact h4 {
+footer h4 {
   padding: 0;
   margin: 20px 0px;
 }
 
-.social h4 {
-  padding: 0;
-  margin: 20px 0px;
+div.social-icons {
+  display: flex;
+  justify-content: space-around;
 }
 
-p.social-icons {
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto;
-}
-
-footer i{
-  font-size: 1.75em;
-  margin: 0 15px;
+footer i {
+  font-size: 2.25em;
 }
 
 footer div.copyright {
@@ -645,9 +638,7 @@ section.contact-section div.desktop-grouper {
     line-height: 1.875rem;
   }
 
-  footer h4 {
-    font-size: 1.5em;
-  }
+  
 
   footer p {
     line-height: 1.125rem;
@@ -809,12 +800,24 @@ section.contact-section div.desktop-grouper {
     padding: 100px 0;
   }
 
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
   footer div.contact {
     width: 40%;
   }
 
   footer div.social {
     width: 33%;
+  }
+
+  div.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 12.5em;
   }
 
   /* FAQ Tablet styles */
@@ -984,7 +987,7 @@ section.contact-section div.desktop-grouper {
   }
 
   aside div.desktop-grouper {
-    width: 30%;
+    width: 40%;
     overflow: auto;
     display: flex;
     justify-content: left;
@@ -1030,6 +1033,10 @@ section.contact-section div.desktop-grouper {
     text-align: center;
   }
 
+  section.reviews {
+    padding: 100px 0;
+  }
+
   section.reviews h3 {
     padding: 0;
     margin: 0;
@@ -1038,6 +1045,7 @@ section.contact-section div.desktop-grouper {
 
   section.reviews h2 {
     order: unset;
+    padding-bottom: 50px;
   }
 
   section.reviews div.content-wrapper {
@@ -1069,6 +1077,9 @@ section.contact-section div.desktop-grouper {
     justify-content: center;
   }
 
+  footer h4 {
+    margin-bottom: 40px;
+  }
 
   footer div.footer-content {
     width: 100%;
@@ -1082,6 +1093,13 @@ section.contact-section div.desktop-grouper {
 
   footer div.social {
     width: 23%;
+  }
+
+  div.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 12.5em;
   }
 
   /* FAQ Desktop styles */
